@@ -6,12 +6,11 @@ const productSchema = new mongoose.Schema({
     required: true
   },
   price: {
-    type: String,
+    type: Number,
     required: true
   },
-  owner: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'User',
+  count: {
+    type: Number,
     required: true
   }
 }, {
